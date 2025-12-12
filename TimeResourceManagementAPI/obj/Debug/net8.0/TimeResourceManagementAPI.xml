@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TimeResourceManagementAPI</name>
+    </assembly>
+    <members>
+        <member name="T:TimeResourceManagementAPI.Contracts.User.CreateUserRequest">
+            <summary>
+            для создания пользователя
+            </summary>
+        </member>
+        <member name="T:TimeResourceManagementAPI.Contracts.User.GetUserResponse">
+            <summary>
+            Получить данные пользователя
+            </summary>
+        </member>
+        <member name="T:TimeResourceManagementAPI.Contracts.User.UpdateUserRequest">
+            <summary>
+            Обновление пользователя
+            </summary>
+        </member>
+        <member name="T:TimeResourceManagementAPI.Contracts.User.UserResponse">
+            <summary>
+            отображение данных пользователя
+            </summary>
+        </member>
+        <member name="M:TimeResourceManagementAPI.Controllers.UserController.GetAll">
+            <summary>
+            Получение всех пользователей
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TimeResourceManagementAPI.Controllers.UserController.GetById(System.Int32)">
+            <summary>
+            Получение пользователей по идентификатору (id)
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeResourceManagementAPI.Controllers.UserController.Add(TimeResourceManagementAPI.Contracts.User.CreateUserRequest)">
+             <summary>
+             Создание нового пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "login" : "A4Tech Bloody B188",
+                    "password" : "!Pa$$word123@",
+                    "firstname" : "Иван",
+                    "lastname" : "Иванов",
+                    "middlename" : "Иванович"
+                 }
+            
+             </remarks>
+             <param name="model">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:TimeResourceManagementAPI.Controllers.UserController.Update(TimeResourceManagementAPI.Contracts.User.UpdateUserRequest)">
+            <summary>
+            Изменяет записи пользователей
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeResourceManagementAPI.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Удаляет пользователей по идентификатору
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
